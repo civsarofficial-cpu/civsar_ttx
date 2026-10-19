@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ex_arcgis_imagery",
+    "name": "ArcGIS — World Imagery (basemap)",
+    "kind": "arcgis",
+    "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    "enabled": true,
+    "auth": { "type": "none" },
+    "opts": { "opacity": 0.9 }
+  },
+  {
+    "id": "ex_arcgis_features",
+    "name": "ArcGIS — feature layer (Esri sample)",
+    "kind": "arcgis",
+    "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Major_Cities_/FeatureServer/0",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "limit": 500, "bboxRefresh": true, "zoomTo": true, "color": "#a78bfa" }
+  },
+  {
+    "id": "ex_ogcapi",
+    "name": "OGC API — Features (pygeoapi demo)",
+    "kind": "ogcapi",
+    "url": "https://demo.pygeoapi.io/master/collections/lakes/items",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "limit": 200, "color": "#38bdf8" }
+  },
+  {
+    "id": "ex_wfs",
+    "name": "WFS → GeoJSON (GeoServer demo)",
+    "kind": "wfs",
+    "url": "https://ahocevar.com/geoserver/wfs",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "layers": "osm:water_areas", "version": "1.1.0", "limit": 500, "bboxRefresh": true, "color": "#22d3ee" }
+  },
+  {
+    "id": "ex_wms",
+    "name": "WMS (GeoServer demo)",
+    "kind": "wms",
+    "url": "https://ahocevar.com/geoserver/wms",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "layers": "topp:states", "version": "1.1.1", "opacity": 0.7 }
+  },
+  {
+    "id": "ex_vectortiles",
+    "name": "Vector tiles via TileJSON (OpenFreeMap)",
+    "kind": "tilejson",
+    "url": "https://tiles.openfreemap.org/planet",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "sourceLayer": "building", "color": "#fbbf24" }
+  },
+  {
+    "id": "ex_geojson",
+    "name": "GeoJSON URL (USGS quakes, 7 days)",
+    "kind": "geojson",
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "color": "#fb7185" }
+  },
+  {
+    "id": "ex_mymaps",
+    "name": "Google My Maps — replace with your map",
+    "kind": "mymaps",
+    "url": "https://www.google.com/maps/d/edit?mid=PUT_YOUR_MAP_ID_HERE",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "zoomTo": true, "color": "#34d399" }
+  },
+  {
+    "id": "ex_sheets",
+    "name": "Google Sheets — replace with your sheet",
+    "kind": "sheets",
+    "url": "https://docs.google.com/spreadsheets/d/PUT_YOUR_SHEET_ID_HERE/edit",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "sheet": "Sheet1", "latField": "", "lonField": "", "labelField": "name", "zoomTo": true, "color": "#f472b6" }
+  },
+  {
+    "id": "ex_qgis_server",
+    "name": "QGIS Server — replace with your host",
+    "kind": "wms",
+    "url": "https://your-host/qgisserver?MAP=/projects/exercise.qgs",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "layers": "your-layer-name", "version": "1.3.0" }
+  },
+  {
+    "id": "ex_martin",
+    "name": "Martin / pg_tileserv — replace with your host",
+    "kind": "tilejson",
+    "url": "http://localhost:3000/your_table",
+    "enabled": false,
+    "auth": { "type": "none" },
+    "opts": { "color": "#4ade80" }
+  }
+]

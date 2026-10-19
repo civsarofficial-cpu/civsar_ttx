@@ -1,0 +1,6 @@
+{
+  "name": "civsar-ttx-runtime",
+  "private": true,
+  "type": "module",
+  "description": "Marks the installed server as ES modules. The runtime needs no dependencies — server.js and the two api cores use only Node built-ins."
+}

@@ -1,0 +1,36 @@
+CIVSAR TTX — Tabletop Exercise Planner & Runner
+
+WHAT THIS IS
+A training tool for planning, running and evaluating emergency-operations tabletop
+exercises. It follows the WHO Simulation Exercise Manual (2017) and the ETC/EdOS
+TTX method: concept note, objectives, roles, inject matrix (MSEL), STARTEX,
+injects and responses, ENDEX, hot-wash and after-action report.
+
+THIS IS NOT AN EMERGENCY SYSTEM
+Everything it produces is exercise material. Hazard simulations are illustrative
+training visuals, not forecasts or engineering models, and must never be used for
+real warning, evacuation or engineering decisions.
+
+In a real emergency in Sri Lanka, dial 117 (Disaster Management Centre).
+
+Every exercise message begins and ends with "EXERCISE EXERCISE EXERCISE".
+Brief your participants on the "No Duff" rule before you start: anyone may stop
+the exercise immediately if a real incident occurs.
+
+WHAT GETS INSTALLED
+  - The CIVSAR TTX application (runs in your browser)
+  - A private copy of the Node.js runtime, used only by this app
+  - A Start Menu shortcut that starts the exercise server
+
+No account, internet connection or external service is required to run an
+exercise. Live map layers, weather and traffic feeds use the internet when it is
+available, and the exercise continues without them if it is not.
+
+OTHER DEVICES IN THE ROOM
+The server listens on your local network so players can join from their own
+phones and laptops using the address shown when it starts. If you tick the
+firewall option, the installer adds the rule that allows this.
+
+PRIVACY
+Exercise data stays on this computer unless you configure a Supabase backend
+yourself. Do not put real personal, medical or casualty data into an exercise.

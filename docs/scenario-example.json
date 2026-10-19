@@ -1,0 +1,14 @@
+{
+  "title": "Night on the Slope — Ratnapura landslide",
+  "hazard": "Landslide (SW monsoon)",
+  "location": "Ratnapura district",
+  "mode": "hybrid",
+  "durationMin": 90,
+  "timeScale": 8,
+  "simStart": "2026-06-02T18:00",
+  "objectives": ["O1 Act on NBRO Level 2 (Amber) by moving vulnerable people early", "O2 Keep relief routes from Colombo open"],
+  "injects": [
+    { "atMin": 0, "title": "NBRO Level 1 (Yellow) for named DS divisions", "from": "NBRO", "to": ["eoc-manager", "pio"], "severity": "low", "objective": "O1" },
+    { "atMin": 10, "title": "Rain 110 mm today — NBRO Level 2 (Amber)", "to": ["operations"], "severity": "high", "expectedAction": "Vulnerable people move now", "objective": "O1", "lat": 6.68, "lon": 80.4 }
+  ]
+}

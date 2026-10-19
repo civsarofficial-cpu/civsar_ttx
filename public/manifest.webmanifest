@@ -1,0 +1,1 @@
+{ "name": "CIVSAR TTX Planner & Runner", "short_name": "CIVSAR TTX", "start_url": "/", "display": "standalone", "background_color": "#0f1720", "theme_color": "#0f1720", "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }] }
