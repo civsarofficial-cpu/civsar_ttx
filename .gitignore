@@ -1,0 +1,29 @@
+node_modules
+dist
+
+# Secrets — never commit. .env.example documents the names, with empty values.
+.env
+.env.*
+!.env.example
+credentials.json
+*credentials*.json
+client_secret*.json
+service-account*.json
+*.pem
+*.key
+
+# A connections export carries whatever API keys you entered in Settings.
+*connections*.json
+!docs/connections-example.json
+
+# Windows installer build output
+installer/build/
+installer/out/
+installer/runtime/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+installer/icon-preview.png
